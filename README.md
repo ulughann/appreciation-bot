@@ -10,9 +10,9 @@ Free and open source Discord bot made to show appreciation to others and reward 
 
 ## Check out other languages
 
-- [Turkish Docs <img height=16 src="https://flagicons.lipis.dev/flags/4x3/tr.svg">]()
+- [Turkish Docs <img height=16 src="https://flagicons.lipis.dev/flags/4x3/tr.svg">](./assets/TR.md)
 - [English Docs <img height=16 src="https://flagicons.lipis.dev/flags/4x3/gb.svg">]()
-- [Japanese Docs]() <img height=16 src="https://flagicons.lipis.dev/flags/4x3/jp.svg">
+- [Japanese Docs](./assets/JA.md) <img height=16 src="https://flagicons.lipis.dev/flags/4x3/jp.svg">
 - Korean Docs <img height=16 src="https://flagicons.lipis.dev/flags/4x3/kr.svg"> (Coming soon)
 
 ## Features
