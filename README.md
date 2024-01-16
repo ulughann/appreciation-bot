@@ -3,6 +3,7 @@
 # Appreciation-bot
 
 Free and open source Discord bot made to show appreciation to others and reward said appreciation. Beutifully translated to 3 languages.
+
 [Add to your server](https://discord.com/api/oauth2/authorize?client_id=1196863040029732884&permissions=275146729472&scope=bot+applications.commands), [Build Instructions](#build)
 
 <img src="./assets/promotional_material.png">
