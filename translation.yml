@@ -1,0 +1,204 @@
+English:
+  thank:
+    name: thank
+    description: Thank a given user (can only be used once a day)
+    role_description_1: The user you want to thank
+    warn1: You can't thank bots!
+    warn2: You can't thank yourself!
+    warn3: Please specify a user to thank!
+    cooldown: ⏱ You are on Cooldown!
+    cooldown_description: You can thank someone again in
+    hour: hours
+    min: minutes
+    sec: seconds
+    success: 👍 Thanked!
+    success_desc: You thanked %user They now have %num thanks!
+    error: ❌ Error!
+    error_desc: \*\*There was an error giving %role to %user!\*\*\n\n
+                it is likely that my role is below the role you want to give!
+  rewards:
+    name: rewards
+    description: Check the role rewards of this server
+    none: There are no rewards set for this server!
+    title: 🎁 Rewards
+  info: 
+    name: info
+    description: Check how many thanks you or a given user has
+    role_description_1: The user you want to check (optional)
+    warn1: Please specify a user to check!
+    title: 👍 Thanks
+    desc: \%user has %num thanks!
+  set_thanks:
+    name: set-thanks
+    description: Sets the amount of thanks someone has
+    amount: The user you want to modify
+    num: The amount of thanks to set
+    warn1: ❌ You don't have permission to do this action!
+    warn2: Please specify a user to modify!
+    warn3: Please specify an amount!
+    success: ✅ Modified Thanks
+    success_desc: You set %user's thanks to %num
+  set_cooldown:
+    name: set-cooldown
+    description: Sets the cooldown for thanking someone
+    min: Minutes to set the cooldown to
+    hour: Hours to set the cooldown to
+    day: Days to set the cooldown to
+    warn1: ❌ You don't have permission to do this action!
+    warn2: ❌ You must specify a cooldown!
+    success: ✅ Cooldown Set!
+    success_desc: The cooldown has been set to
+    mins: minutes
+    hours: hours
+    days: days
+  add_role_reward:
+    name: add-role-reward
+    description: Sets a role to give as a reward for a certain amount of thanks
+    amount: The amount of thanks to set
+    role: The role to give
+    warn1: ❌ You don't have permission to do this action!
+    warn2: ❌ You must specify a role!
+    warn3: ❌ You must specify an amount!
+
+    success: ✅ Added Role Reward
+    success_desc: Set %role to be given at %num thanks!\n
+              ⚠ Please make sure that my role is above the role you want to give
+  remove_role_reward:
+    name: remove-role-reward
+    description: Removes a role reward
+    amount: The amount of the thanks that the role is given at
+    warn1: ❌ You don't have permission to do this action!
+    warn2: ❌ You must specify an amount!
+    success: ✅ Removed Role Reward
+    success_desc: Removed the role reward for %num thanks!
+Nihongo:
+  thank:
+    name: thank
+    description: Thank a given user (can only be used once a day)
+    role_description_1: The user you want to thank
+    warn1: You can't thank bots!
+    warn2: You can't thank yourself!
+    warn3: Please specify a user to thank!
+    cooldown: ⏱ You are on Cooldown!
+    cooldown_description: You can thank someone again in
+    hour: hours
+    min: minutes
+    sec: seconds
+    success: 👍 Thanked!
+    success_desc: You thanked %user They now have %num thanks!
+    error: ❌ Error!
+    error_desc: \*\*There was an error giving %role to %user!\*\*\n\n
+                it is likely that my role is below the role you want to give!
+  rewards:
+    name: rewards
+    description: Check the role rewards of this server
+    none: There are no rewards set for this server!
+    title: 🎁 Rewards
+  info: 
+    name: info
+    description: Check how many thanks you or a given user has
+    role_description_1: The user you want to check (optional)
+    warn1: Please specify a user to check!
+    title: 👍 Thanks
+    desc: \%user has %num thanks!
+  set_thanks:
+    name: set-thanks
+    description: Sets the amount of thanks someone has
+    amount: The user you want to modify
+    num: The amount of thanks to set
+    warn1: ❌ You don't have permission to do this action!
+    warn2: Please specify a user to modify!
+    warn3: Please specify an amount!
+    success: ✅ Modified Thanks
+    success_desc: You set %user's thanks to %num
+  set_cooldown:
+    name: set-cooldown
+    description: Sets the cooldown for thanking someone
+    min: Minutes to set the cooldown to
+    hour: Hours to set the cooldown to
+    day: Days to set the cooldown to
+    warn1: ❌ You don't have permission to do this action!
+    warn2: ❌ You must specify a cooldown!
+    success: ✅ Cooldown Set!
+    success_desc: The cooldown has been set to
+    mins: minutes
+    hours: hours
+    days: days
+  add_role_reward:
+    name: add-role-reward
+    description: Sets a role to give as a reward for a certain amount of thanks
+    amount: The amount of thanks to set
+    role: The role to give
+    warn1: ❌ You don't have permission to do this action!
+    warn2: ❌ You must specify a role!
+    warn3: ❌ You must specify an amount!
+
+    success: ✅ Added Role Reward
+    success_desc: Set %role to be given at %num thanks!\n
+              ⚠ Please make sure that my role is above the role you want to give
+  remove_role_reward:
+  thank:
+    name: arigato
+    description: arigato's a chan ichi times a day
+    role_description_1: The user you want to thank
+    warn1: You can't thank bots!
+    warn2: You can't thank yourself!
+    warn3: Please specify a user to thank!
+    cooldown: ⏱ You are on Cooldown!
+    cooldown_description: You can thank someone again in
+    hour: hours
+    min: minutes
+    sec: seconds
+    success: 👍 Thanked!
+    success_desc: You thanked %user They now have %num thanks!
+    error: ❌ Error!
+    error_desc: \*\*There was an error giving %role to %user!\*\*\n\n
+                it is likely that my role is below the role you want to give!
+  rewards:
+    name: rewards
+    description: Check the role rewards of this server
+    none: There are no rewards set for this server!
+    title: 🎁 Rewards
+  info: 
+    name: info
+    description: Check how many thanks you or a given user has
+    role_description_1: The user you want to check (optional)
+    warn1: Please specify a user to check!
+    title: 👍 Thanks
+    desc: \%user has %num thanks!
+  set-thanks:
+    name: set-thanks
+    description: Sets the amount of thanks someone has
+    amount: The user you want to modify
+    num: The amount of thanks to set
+    warn1: ❌ You don't have permission to do this action!
+    warn2: Please specify a user to modify!
+    warn3: Please specify an amount!
+    success: ✅ Modified Thanks
+    success_desc: You set %user's thanks to %num
+  set-cooldown:
+    name: set-cooldown
+    description: Sets the cooldown for thanking someone
+    min: Minutes to set the cooldown to
+    hour: Hours to set the cooldown to
+    day: Days to set the cooldown to
+    warn1: ❌ You don't have permission to do this action!
+    warn2: ❌ You must specify a cooldown!
+    success: ✅ Cooldown Set!
+    success_desc: The cooldown has been set to
+    mins: minutes
+    hours: hours
+    days: days
+  add-role-reward:
+    name: add-role-reward
+    description: Sets a role to give as a reward for a certain amount of thanks
+    amount: The amount of thanks to set
+    role: The role to give
+    warn1: ❌ You don't have permission to do this action!
+    warn2: ❌ You must specify a role!
+    warn3: ❌ You must specify an amount!
+
+    success: ✅ Added Role Reward
+    success_desc: Set %role to be given at %num thanks!\n
+              ⚠ Please make sure that my role is above the role you want to give
+  remove-role-reward:
