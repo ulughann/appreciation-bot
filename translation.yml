@@ -84,7 +84,7 @@ Nihongo:
     min: 分
     sec: 秒
     success: 👍 お礼を言いました!
-    success_desc: %userにお礼を言いました。今%numのお礼はいます!
+    success_desc: "%userにお礼を言いました。今%numのお礼はいます!"
     error: ❌ 失敗しました!
     error_desc: \*\*%roleを%userに与え時で失敗が起こりしました！\*\*\n\n
                 恐らく、僕の権限が君の与え欲しがったロールから下いだと思う！
@@ -99,7 +99,7 @@ Nihongo:
     role_description_1: お礼を革命したい人「随意」
     warn1: 革命したい人を言及してください！
     title: 👍 ありがとうございます。
-    desc: \%userは%numのお礼はいます！
+    desc: "%userは%numのお礼はいます！"
   set_thanks:
     name: お礼の設定
     description: 人のお礼を設定する
@@ -109,7 +109,7 @@ Nihongo:
     warn2: 設定したい人を選んでください！
     warn3: 設定したい数を選んでください！
     success: ✅ お礼は設定しました
-    success_desc: %userのお礼の数は%numに設定しました
+    success_desc: "%userのお礼の数は%numに設定しました"
   set_cooldown:
     name: 冷却期間の設定
     description: 誰かの冷却期間を設定します
@@ -132,8 +132,8 @@ Nihongo:
     warn2: ❌ ロールを設定してください！
     warn3: ❌ 数を設定してください！
     success: ✅ 報酬ロールは設定しました！
-    success_desc: %roleは%numのお礼で与えられます！!\n
-              ⚠ ロールの権限は僕の権限から下いと照合してください
+    success_desc: "%roleは%numのお礼で与えられます！!\n
+              ⚠ ロールの権限は僕の権限から下いと照合してください"
   remove_role_reward:
     name: ロール報酬を消す
     description: 設定された報酬ロールを消す
@@ -141,7 +141,7 @@ Nihongo:
     warn1: ❌ このコマンドを使う権限はいません！
     warn2: ❌ 数を設定してください！
     success: ✅ ロール報酬は消しました
-    success_desc: %numの数で与えるロール報酬は消しました！
+    success_desc: "%numの数で与えるロール報酬は消しました！"
 Turkish:
   thank:
     name: teşekkür-et
