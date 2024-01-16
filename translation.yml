@@ -72,76 +72,76 @@ English:
     success_desc: Removed the role reward for %num thanks!
 Nihongo:
   thank:
-    name: thank
-    description: Thank a given user (can only be used once a day)
-    role_description_1: The user you want to thank
-    warn1: You can't thank bots!
-    warn2: You can't thank yourself!
-    warn3: Please specify a user to thank!
-    cooldown: ⏱ You are on Cooldown!
-    cooldown_description: You can thank someone again in
-    hour: hours
-    min: minutes
-    sec: seconds
-    success: 👍 Thanked!
-    success_desc: You thanked %user They now have %num thanks!
-    error: ❌ Error!
-    error_desc: \*\*There was an error giving %role to %user!\*\*\n\n
-                it is likely that my role is below the role you want to give!
+    name: お礼
+    description: 名を言った人にお礼をする「ー日で一分」
+    role_description_1: お礼を言いたい人
+    warn1: ボットにお礼はできません！
+    warn2: 自分にお礼はできません！
+    warn3: お礼を言いたい人を選んで人！
+    cooldown: ⏱ 今、クールダウン中！
+    cooldown_description: でまた人にお礼を言いできます
+    hour: 時間
+    min: 分
+    sec: 秒
+    success: 👍 お礼を言いました!
+    success_desc: %userにお礼を言いました。今%numのお礼はいます!
+    error: ❌ 失敗しました!
+    error_desc: \*\*%roleを%userに与え時で失敗が起こりしました！\*\*\n\n
+                恐らく、僕の権限が君の与え欲しがったロールから下いだと思う！
   rewards:
-    name: rewards
-    description: Check the role rewards of this server
-    none: There are no rewards set for this server!
-    title: 🎁 Rewards
+    name: 報酬
+    description: このギルドの報酬ロールを照合する
+    none: このギルドに報酬とかありません！
+    title: 🎁 報酬は
   info: 
-    name: info
-    description: Check how many thanks you or a given user has
-    role_description_1: The user you want to check (optional)
-    warn1: Please specify a user to check!
-    title: 👍 Thanks
-    desc: "%user has %num thanks!"
+    name: 革命
+    description: 自分とか言及の人の幾らお礼を集めてを革命する
+    role_description_1: お礼を革命したい人「随意」
+    warn1: 革命したい人を言及してください！
+    title: 👍 ありがとうございます。
+    desc: \%userは%numのお礼はいます！
   set_thanks:
-    name: set-thanks
-    description: Sets the amount of thanks someone has
-    amount: The user you want to modify
-    num: The amount of thanks to set
-    warn1: ❌ You don't have permission to do this action!
-    warn2: Please specify a user to modify!
-    warn3: Please specify an amount!
-    success: ✅ Modified Thanks
-    success_desc: You set %user's thanks to %num
+    name: お礼の設定
+    description: 人のお礼を設定する
+    amount: 設定したい人
+    num: 設定したい数
+    warn1: ❌ このコマンドを使う権限はいません！
+    warn2: 設定したい人を選んでください！
+    warn3: 設定したい数を選んでください！
+    success: ✅ お礼は設定しました
+    success_desc: %userのお礼の数は%numに設定しました
   set_cooldown:
-    name: set-cooldown
-    description: Sets the cooldown for thanking someone
-    min: Minutes to set the cooldown to
-    hour: Hours to set the cooldown to
-    day: Days to set the cooldown to
-    warn1: ❌ You don't have permission to do this action!
-    warn2: ❌ You must specify a cooldown!
-    success: ✅ Cooldown Set!
-    success_desc: The cooldown has been set to
-    mins: minutes
-    hours: hours
-    days: days
+    name: 冷却期間の設定
+    description: 誰かの冷却期間を設定します
+    min: 冷却期間の設定したい分
+    hour: 冷却期間の設定したい時間
+    day: 冷却期間の設定したい日
+    warn1: ❌ これをできる報酬はいません！
+    warn2: ❌ 冷却期間を設定してください！
+    success: ✅ 冷却期間は設定しました！
+    success_desc: 冷却期間は%cooldownに設定しました
+    mins: 分
+    hours: 時間
+    days: 日
   add_role_reward:
-    name: add-role-reward
-    description: Sets a role to give as a reward for a certain amount of thanks
-    amount: The amount of thanks to set
-    role: The role to give
-    warn1: ❌ You don't have permission to do this action!
-    warn2: ❌ You must specify a role!
-    warn3: ❌ You must specify an amount!
-    success: ✅ Added Role Reward
-    success_desc: Set %role to be given at %num thanks!\n
-              ⚠ Please make sure that my role is above the role you want to give
+    name: ロール報酬を追加
+    description: 設定された数でのお礼に報酬ロールを設定しる
+    amount: お礼の数
+    role: 与えるロール
+    warn1: ❌ このコマンドを使う権限はいません！
+    warn2: ❌ ロールを設定してください！
+    warn3: ❌ 数を設定してください！
+    success: ✅ 報酬ロールは設定しました！
+    success_desc: %roleは%numのお礼で与えられます！!\n
+              ⚠ ロールの権限は僕の権限から下いと照合してください
   remove_role_reward:
-    name: remove-role-reward
-    description: Removes a role reward
-    amount: The amount of the thanks that the role is given at
-    warn1: ❌ You don't have permission to do this action!
-    warn2: ❌ You must specify an amount!
-    success: ✅ Removed Role Reward
-    success_desc: Removed the role reward for %num thanks!
+    name: ロール報酬を消す
+    description: 設定された報酬ロールを消す
+    amount: お礼の数
+    warn1: ❌ このコマンドを使う権限はいません！
+    warn2: ❌ 数を設定してください！
+    success: ✅ ロール報酬は消しました
+    success_desc: %numの数で与えるロール報酬は消しました！
 Turkish:
   thank:
     name: teşekkür-et
