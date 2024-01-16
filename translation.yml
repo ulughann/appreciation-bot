@@ -27,7 +27,7 @@ English:
     role_description_1: The user you want to check (optional)
     warn1: Please specify a user to check!
     title: 👍 Thanks
-    desc: \%user has %num thanks!
+    desc: "%user has %num thanks!"
   set_thanks:
     name: set-thanks
     description: Sets the amount of thanks someone has
@@ -99,7 +99,7 @@ Nihongo:
     role_description_1: The user you want to check (optional)
     warn1: Please specify a user to check!
     title: 👍 Thanks
-    desc: \%user has %num thanks!
+    desc: "%user has %num thanks!"
   set_thanks:
     name: set-thanks
     description: Sets the amount of thanks someone has
