@@ -17,8 +17,8 @@ Free and open source Discord bot made to show appreciation to others and reward 
 
 ## Features
 
-- [x] Language support for English, Turkish, Japanese
-- [ ] Language support for Korean, German and Spanish
+- [x] Language support for English, Japanese
+- [ ] Language support for Turkish, Korean, German and Spanish
 - [x] Customisable role rewards
 - [x] Admin commands (`/set`, `/set-cooldown`)
 - [x] Customisable cooldowns
