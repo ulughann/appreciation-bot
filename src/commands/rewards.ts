@@ -11,11 +11,13 @@ export default {
     .setNameLocalizations({
       "en-US": langData.get("English").rewards.name,
       ja: langData.get("Nihongo").rewards.name,
+      tr: langData.get("Turkish").rewards.name,
     })
     .setDescription("Check the role rewards of this server")
     .setDescriptionLocalizations({
       "en-US": langData.get("English").rewards.description,
       ja: langData.get("Nihongo").rewards.description,
+      tr: langData.get("Turkish").rewards.description,
     }),
   run: async (client, interaction) => {
     let l = langData.get(locale(interaction)).rewards;

@@ -14,11 +14,13 @@ export default {
     .setNameLocalizations({
       "en-US": langData.get("English").set_cooldown.name,
       ja: langData.get("Nihongo").set_cooldown.name,
+      tr: langData.get("Turkish").set_cooldown.name,
     })
     .setDescription("Sets the cooldown for thanking someone")
     .setDescriptionLocalizations({
       "en-US": langData.get("English").set_cooldown.description,
       ja: langData.get("Nihongo").set_cooldown.description,
+      tr: langData.get("Turkish").set_cooldown.description,
     })
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
     .addIntegerOption((option) =>
@@ -29,6 +31,7 @@ export default {
         .setDescriptionLocalizations({
           "en-US": langData.get("English").set_cooldown.min,
           ja: langData.get("Nihongo").set_cooldown.min,
+          tr: langData.get("Turkish").set_cooldown.min,
         })
     )
     .addIntegerOption((option) =>
@@ -39,6 +42,7 @@ export default {
         .setDescriptionLocalizations({
           "en-US": langData.get("English").set_cooldown.hour,
           ja: langData.get("Nihongo").set_cooldown.hour,
+          tr: langData.get("Turkish").set_cooldown.hour,
         })
     )
     .addIntegerOption((option) =>

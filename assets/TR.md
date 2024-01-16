@@ -15,62 +15,61 @@
 - [Japanese Docs](./JA.md) <img height=16 src="https://flagicons.lipis.dev/flags/4x3/jp.svg">
 - Korean Docs <img height=16 src="https://flagicons.lipis.dev/flags/4x3/kr.svg"> (Coming soon)
 
-## Features
+## Özellikler
 
-- [x] Language support for English, Japanese
-- [ ] Language support for Turkish, Korean, German and Spanish
-- [x] Customisable role rewards
-- [x] Admin commands (`/set`, `/set-cooldown`)
-- [x] Customisable cooldowns
+- [x] Türkçe, İngilizce ve Japonca dil desteği
+- [ ] Korece, Almanca ve İspanyolca dil desteği
+- [x] Özelleştirilebilir rol ödülleri
+- [x] Admin komutları (`/teşekkür-ayarla`, `/bekleme-süresini-ayarla`)
+- [x] Özelleştirilebilir bekleme süresi
+- [x] Tamamen açık kaynak ve ücretsiz 
 
-## Table of Contents
+## İçerikler
 
 - [Appreciation-bot](#appreciation-bot)
-  - [Check out other languages](#check-out-other-languages)
-  - [Features](#features)
-  - [Table of Contents](#table-of-contents)
-  - [Commands](#commands)
-    - [`/thank <@user>`](#thank-user)
-    - [`/info <@user>?`](#info-user)
-    - [`/rewards`](#rewards)
-    - [`/set-thanks <@user> <amount>`](#set-thanks-user-amount)
-    - [`/set-cooldown <amount>`](#set-cooldown-amount)
-    - [`/add-role-reward <amount> <@role>`](#add-role-reward-amount-role)
-    - [`/remove-role-reward <amount>`](#remove-role-reward-amount)
-  - [Build](#build)
-  - [License](#license)
+  - [Diğer Dillere Göz At](#diğer-dillere-göz-at)
+  - [Özellikler](#özellikler)
+  - [İçerikler](#i̇çerikler)
+  - [Komutlar](#komutlar)
+    - [`/teşekkür-et <@user>`](#teşekkür-et-user)
+    - [`/bilgi <@user>?`](#bilgi-user)
+    - [`/ödüller`](#ödüller)
+    - [`/teşekkür-ayarla <@user> <amount>`](#teşekkür-ayarla-user-amount)
+    - [`/bekleme-süresini-ayarla <amount>`](#bekleme-süresini-ayarla-amount)
+    - [`/rol-ödülü-ekle <amount> <@role>`](#rol-ödülü-ekle-amount-role)
+    - [`/rol-ödülü-kaldır <amount>`](#rol-ödülü-kaldır-amount)
+  - [Build Adımları](#build-adımları)
+  - [Lisans](#lisans)
 
 ## Komutlar
 
-### `/thank <@user>`
+### `/teşekkür-et <@user>`
 
-thanks the given user, adds **1** point to their score and gives them a role if role rewards are set and they have enough points.
+Belirtilen kullanıcıya teşekkür eder ve teşekkür ettiğiniz kişinin puanını arttırır. Eğer kullanıcı belirtilmezse, komutu kullanan kişinin puanını arttırır.
 
-Shows the cooldown if the user is on cooldown.
+### `/bilgi <@user>?`
 
-### `/info <@user>?`
+Belirtilen kullanıcının puanını gösterir. Eğer kullanıcı belirtilmezse, komutu kullanan kişinin puanını gösterir.
 
-Shows the score of the given user, if no user is given, shows the score of the user who sent the command.
+### `/ödüller`
 
-### `/rewards`
+Sunucudaki rol ödüllerini gösterir.
 
-Shows the role rewards set for the server.
+### `/teşekkür-ayarla <@user> <amount>`
 
-### `/set-thanks <@user> <amount>`
+Belirtilen kullanıcının puanını belirtilen miktarda ayarlar. Eğer kullanıcı belirtilmezse, komutu kullanan kişinin puanını ayarlar.
 
-Sets the score of the given user to the given amount.
+### `/bekleme-süresini-ayarla <amount>`
 
-### `/set-cooldown <amount>`
+Teşekkür etme komutunun bekleme süresini belirtilen miktarda ayarlar.
 
-Sets the cooldown of the server to the given amount.
+### `/rol-ödülü-ekle <amount> <@role>`
 
-### `/add-role-reward <amount> <@role>`
+Sunucuya rol ödülü ekler.
 
-Adds a role reward to the server, if the role reward already exists, adds the given amount to the existing amount.
+### `/rol-ödülü-kaldır <amount>`
 
-### `/remove-role-reward <amount>`
-
-Removes the given role reward from the server.
+Sunucudan rol ödülü kaldırır.
 
 ## Build Adımları
 
@@ -82,4 +81,4 @@ Removes the given role reward from the server.
 
 ## Lisans
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+Bu proje MIT lisansı ile lisanslanmıştır. Daha fazla bilgi için [LICENSE](../LICENSE) dosyasına göz atın.

@@ -12,11 +12,13 @@ export default {
     .setNameLocalizations({
       "en-US": langData.get("English").thank.name,
       ja: langData.get("Nihongo").thank.name,
+      tr: langData.get("Turkish").thank.name,
     })
     .setDescription("Thank a given user (can only be used once a day)")
     .setDescriptionLocalizations({
       "en-US": langData.get("English").thank.description,
       ja: langData.get("Nihongo").thank.description,
+      tr: langData.get("Turkish").thank.description,
     })
     .addUserOption((option) =>
       option
@@ -25,6 +27,7 @@ export default {
         .setDescriptionLocalizations({
           "en-US": langData.get("English").thank.role_description_1,
           ja: langData.get("Nihongo").thank.role_description_1,
+          tr: langData.get("Turkish").thank.role_description_1,
         })
         .setRequired(true)
     ),

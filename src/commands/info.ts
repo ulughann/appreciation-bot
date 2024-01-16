@@ -11,11 +11,13 @@ export default {
     .setNameLocalizations({
       "en-US": langData.get("English").info.name,
       ja: langData.get("Nihongo").info.name,
+      tr: langData.get("Turkish").info.name,
     })
     .setDescription("Check how many thanks you or a given user has")
     .setDescriptionLocalizations({
       "en-US": langData.get("English").info.description,
       ja: langData.get("Nihongo").info.description,
+      tr: langData.get("Turkish").info.description,
     })
     .addUserOption((option) =>
       option

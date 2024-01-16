@@ -142,3 +142,75 @@ Nihongo:
     warn2: ❌ You must specify an amount!
     success: ✅ Removed Role Reward
     success_desc: Removed the role reward for %num thanks!
+Turkish:
+  thank:
+    name: teşekkür-et
+    description: Bir kullanıcıya teşekkür edin
+    role_description_1: Teşekkür etmek istediğiniz kullanıcı
+    warn1: Botlara teşekkür edemezsin!
+    warn2: Kendine teşekkür edemezsin!
+    warn3: Teşekkür etmek için birini seçiniz!
+    cooldown: ⏱ Biraz sakin ol!
+    cooldown_description: Birine yeniden teşekkür etmek için beklemen gereken süre;
+    hour: saat
+    min: dakika
+    sec: saniye
+    success: 👍 Teşekkürler!
+    success_desc: "%user'a teşekkür ettin, artık %num puana sahipler!"
+    error: ❌ Hata!
+    error_desc: \*\*%user'a %role rolünü verirken bir hata oluştu!\*\*\n\n
+                Büyük ihtimalle benim rolüm, vermek istediğiniz rolün altında.
+  rewards:
+    name: ödüller
+    description: Bu sunucunun rol ödüllerini kontrol edin
+    none: Bu sunucu için ayarlanmış ödül yok!
+    title:  Ödüller
+  info: 
+   name: bilgi
+   description: Kendinizin veya belirli bir kullanıcının kaç teşekkürü olduğunu kontrol edin
+   role_description_1: Kontrol etmek istediğiniz kullanıcı (isteğe bağlı)
+   warn1: Lütfen kontrol etmek için bir kullanıcı belirtin!
+   title:  Teşekkürler
+   desc: "%user %num teşekküre sahip!"
+  set_thanks:
+   name: teşekkür-ayarla
+   description: Birinin sahip olduğu teşekkür miktarını ayarlar
+   amount: Değiştirmek istediğiniz kullanıcı
+   num: Ayarlanacak teşekkür miktarı
+   warn1: ❌ Bu işlemi yapmak için izniniz yok!
+   warn2: Lütfen değiştirilecek bir kullanıcı belirtin!
+   warn3: Lütfen bir miktar belirtin!
+   success: ✅ Teşekkürler Değiştirildi
+   success_desc: "%user'ın teşekkürlerini %num olarak ayarladınız"
+  set_cooldown:
+   name: bekleme-süresini-ayarla
+   description: Birine teşekkür etme süresini ayarlar
+   min: Dakika olarak ayarlanacak bekleme süresi
+   hour: Saat olarak ayarlanacak bekleme süresi
+   day: Gün olarak ayarlanacak bekleme süresi
+   warn1: ❌ Bu işlemi yapmak için izniniz yok!
+   warn2: ❌ Bir bekleme süresi belirtmelisiniz!
+   success: ✅ Bekleme Süresi Ayarlandı!
+   success_desc: Bekleme süresi ayarlandı
+   mins: dakika
+   hours: saat
+   days: gün
+  add_role_reward:
+   name: rol-ödülü-ekle
+   description: Belirli bir teşekkür miktarı için verilecek bir rol ayarlar
+   amount: Ayarlanacak teşekkür miktarı
+   role: Verilecek rol
+   warn1: ❌ Bu işlemi yapmak için izniniz yok!
+   warn2: ❌ Bir rol belirtmelisiniz!
+   warn3: ❌ Bir miktar belirtmelisiniz!
+   success: ✅ Rol Ödülü Eklendi
+   success_desc: "%role rolünün %num teşekkürde verilmesini ayarladınız!\n
+              ⚠ Lütfen rolümün vermek istediğiniz rolün üstünde olduğundan emin olun"
+  remove_role_reward:
+   name: rol-ödülü-kaldır
+   description: Bir rol ödülünü kaldırır
+   amount: Rolün verildiği teşekkür miktarı
+   warn1: ❌ Bu işlemi yapmak için izniniz yok!
+   warn2: ❌ Bir miktar belirtmelisiniz!
+   success: ✅ Rol Ödülü Kaldırıldı
+   success_desc: "%num teşekkür için rol ödülü kaldırıldı!"

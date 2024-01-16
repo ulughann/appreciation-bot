@@ -13,11 +13,13 @@ export default {
     .setNameLocalizations({
       "en-US": langData.get("English").set_thanks.name,
       ja: langData.get("Nihongo").set_thanks.name,
+      tr: langData.get("Turkish").set_thanks.name,
     })
     .setDescription("Sets the amount of thanks someone has")
     .setDescriptionLocalizations({
       "en-US": langData.get("English").set_thanks.description,
       ja: langData.get("Nihongo").set_thanks.description,
+      tr: langData.get("Turkish").set_thanks.description,
     })
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
     .addUserOption((option) =>
@@ -28,6 +30,7 @@ export default {
         .setDescriptionLocalizations({
           "en-US": langData.get("English").set_thanks.amount,
           ja: langData.get("Nihongo").set_thanks.amount,
+          tr: langData.get("Turkish").set_thanks.amount,
         })
     )
     .addIntegerOption((option) =>

@@ -13,11 +13,13 @@ export default {
     .setNameLocalizations({
       "en-US": langData.get("English").add_role_reward.name,
       ja: langData.get("Nihongo").add_role_reward.name,
+      tr: langData.get("Turkish").add_role_reward.name,
     })
     .setDescription("Sets a role to give as a reward for a certain amount of thanks")
     .setDescriptionLocalizations({
       "en-US": langData.get("English").add_role_reward.description,
       ja: langData.get("Nihongo").add_role_reward.description,
+      tr: langData.get("Turkish").add_role_reward.description,
     })
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
     .addIntegerOption((option) =>
@@ -28,6 +30,7 @@ export default {
         .setDescriptionLocalizations({
           "en-US": langData.get("English").add_role_reward.amount,
           ja: langData.get("Nihongo").add_role_reward.amount,
+          tr: langData.get("Turkish").add_role_reward.amount,
         })
     )
     .addRoleOption((option) =>
@@ -38,6 +41,7 @@ export default {
         .setDescriptionLocalizations({
           "en-US": langData.get("English").add_role_reward.role,
           ja: langData.get("Nihongo").add_role_reward.role,
+          tr: langData.get("Turkish").add_role_reward.role,
         })
     ),
   run: async (client, interaction) => {

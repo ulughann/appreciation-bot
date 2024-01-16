@@ -13,11 +13,13 @@ export default {
     .setNameLocalizations({
       "en-US": langData.get("English").remove_role_reward.name,
       ja: langData.get("Nihongo").remove_role_reward.name,
+      tr: langData.get("Turkish").remove_role_reward.name,
     })
     .setDescription("Removes a given role reward")
     .setDescriptionLocalizations({
       "en-US": langData.get("English").remove_role_reward.description,
       ja: langData.get("Nihongo").remove_role_reward.description,
+      tr: langData.get("Turkish").remove_role_reward.description,
     })
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
     .addIntegerOption((option) =>
@@ -28,6 +30,7 @@ export default {
         .setDescriptionLocalizations({
           "en-US": langData.get("English").remove_role_reward.amount,
           ja: langData.get("Nihongo").remove_role_reward.amount,
+          tr: langData.get("Turkish").remove_role_reward.amount,
         })
     ),
   run: async (client, interaction) => {

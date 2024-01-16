@@ -20,7 +20,7 @@ const client = new Client(intents) as ClientWithCommands;
 client.commands = new Collection();
 client.datas = [];
 
-const token = parse(readFileSync("config", "utf-8")).token;
+const token = parse(readFileSync(".config", "utf-8")).token;
 
 const getFiles = (dir, files = []) => {
   readdirSync(dir).forEach((file) => {
