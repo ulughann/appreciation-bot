@@ -73,12 +73,25 @@ Sunucudan rol ödülü kaldırır.
 
 ## Build Adımları
 
-1. Clone the repository
-2. Install dependencies with `npm install`
-3. Add your token to the `config` file
-4. Run the bot with `npm start`
-5. Invite the bot to your server and enjoy!
 
+1. Projeyi klonla
+```bash
+$ git clone https://github.com/onrirr/appreciation-bot
+```
+2. `npm install` ile gereksinimleri indir
+```bash
+$ npm install
+```
+3. `.config` dosyası oluştur
+4. Bot tokenini .config dosyasına ekle
+```python
+token = XXXXXXX_xXXXXX_xXX_xXXXXXXXXXXXXX
+``` 
+4. `npm start` ile botu çalıştır
+```bash
+$ npm run start
+```
+5. Botu sunucuna ekle ve kullanmaya başla!
 ## Lisans
 
 Bu proje MIT lisansı ile lisanslanmıştır. Daha fazla bilgi için [LICENSE](../LICENSE) dosyasına göz atın.

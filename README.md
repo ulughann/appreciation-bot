@@ -75,9 +75,22 @@ Removes the given role reward from the server.
 ## Build
 
 1. Clone the repository
+```bash
+$ git clone https://github.com/onrirr/appreciation-bot
+```
 2. Install dependencies with `npm install`
-3. Add your token to the `config` file
+```bash
+$ npm install
+```
+3. Create a `.config` file
+4. Add your bot token to the .config file like so
+```python
+token = XXXXXXX_xXXXXX_xXX_xXXXXXXXXXXXXX
+``` 
 4. Run the bot with `npm start`
+```bash
+$ npm run start
+```
 5. Invite the bot to your server and enjoy!
 
 ## License
