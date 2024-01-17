@@ -37,26 +37,19 @@ export default {
     let l = langData.get(locale(interaction)).remove_role_reward;
     if (!interaction.member.permissions.has(PermissionFlagsBits.Administrator))
       return interaction.reply({
-        embeds: [
-          new EmbedBuilder()
-            .setTitle(l.warn1)
-            .setColor(Colors.Red),
-        ],
+        embeds: [new EmbedBuilder().setTitle(l.warn1).setColor(Colors.Red)],
       });
 
     const db = new Database(`data/${interaction.guild.id}.json`);
     const amount = interaction.options.getInteger("amount");
-    if (!amount)
-      return interaction.reply({ content: l.warn2 });
+    if (!amount) return interaction.reply({ content: l.warn2 });
 
     await db.delete(`thank_role_${amount}`);
     interaction.reply({
       embeds: [
         new EmbedBuilder()
           .setTitle(l.success)
-          .setDescription(
-            (l.desc).replace("%num", amount)
-          )
+          .setDescription(l.desc.replace("%num", amount))
           .setColor(Colors.Green),
       ],
     });

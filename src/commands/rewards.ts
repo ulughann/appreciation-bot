@@ -31,8 +31,7 @@ export default {
         rewards.push(`**${level} thanks**: ${role}`);
       }
     });
-    if (rewards.length === 0)
-      rewards.push(l.none);
+    if (rewards.length === 0) rewards.push(l.none);
     interaction.reply({
       embeds: [
         new EmbedBuilder()

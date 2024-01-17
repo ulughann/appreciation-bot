@@ -40,20 +40,18 @@ export default {
     let users = db.all().filter((key) => key.ID.startsWith("thanks."));
     let sorted = users.sort((a, b) => b.data - a.data);
     let top = sorted.slice(0, number);
-    let topUsers = await Promise.all(top.map(async(key) => {
-      let user = await client.users.fetch(key.ID.split(".")[1]);
-      return `${user.username} - ${key.data}`;
-    }));
+    let topUsers = await Promise.all(
+      top.map(async (key) => {
+        let user = await client.users.fetch(key.ID.split(".")[1]);
+        return `${user.username} - ${key.data}`;
+      })
+    );
 
     let ranking = topUsers.map((user, index) => `${index + 1}. ${user}`);
-
-    console.log(topUsers);
     let embed = new EmbedBuilder()
       .setColor(Colors.Blue)
       .setTitle(l.title)
-      .setDescription(
-        ranking.join("\n") || "none"
-      )
+      .setDescription(ranking.join("\n") || "none");
     await interaction.reply({ embeds: [embed] });
-  }
+  },
 };

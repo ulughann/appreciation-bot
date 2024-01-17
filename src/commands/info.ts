@@ -34,18 +34,19 @@ export default {
     if (interaction.user.bot) return;
     const db = new Database(`data/${interaction.guild.id}.json`);
     const user = interaction.options.getUser("user") || interaction.user;
-    if (!user)
-      return interaction.reply({ content: l.warn1 });
+    if (!user) return interaction.reply({ content: l.warn1 });
 
     interaction.reply({
       embeds: [
         new EmbedBuilder()
           .setTitle(l.title)
           .setDescription(
-            (l.desc).replace("%user", user).replace("%num", db.get(`thanks.${user.id}`) || 0)
+            l.desc
+              .replace("%user", user)
+              .replace("%num", db.get(`thanks.${user.id}`) || 0)
           )
           .setColor(Colors.Green),
       ],
     });
-  }
+  },
 };
