@@ -1,5 +1,5 @@
 import { ActivityType, Client } from "discord.js";
-const activities = ["Onrir", "github.com/onrirr/ts-discord-bot"];
+const activities = ["to the melody of the magic word", "to you thanking one other", "dombıra"];
 
 export default {
 	name: 'ready',
