@@ -33,6 +33,7 @@ Free and open source Discord bot made to show appreciation to others and reward 
     - [`/thank <@user>`](#thank-user)
     - [`/info <@user>?`](#info-user)
     - [`/rewards`](#rewards)
+    - [`/leaderboard <amount>?`](#leaderboard-amount)
     - [`/set-thanks <@user> <amount>`](#set-thanks-user-amount)
     - [`/set-cooldown <amount>`](#set-cooldown-amount)
     - [`/add-role-reward <amount> <@role>`](#add-role-reward-amount-role)
@@ -55,6 +56,10 @@ Shows the score of the given user, if no user is given, shows the score of the u
 ### `/rewards`
 
 Shows the role rewards set for the server.
+
+### `/leaderboard <amount>?`
+
+Displays the leaderboard for the current server, amount is optional and specificies the amount of users to display.
 
 ### `/set-thanks <@user> <amount>`
 

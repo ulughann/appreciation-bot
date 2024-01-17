@@ -34,6 +34,7 @@
     - [`/teşekkür-et <@user>`](#teşekkür-et-user)
     - [`/bilgi <@user>?`](#bilgi-user)
     - [`/ödüller`](#ödüller)
+    - [`/sıralama <amount>?`](#sıralama-amount)
     - [`/teşekkür-ayarla <@user> <amount>`](#teşekkür-ayarla-user-amount)
     - [`/bekleme-süresini-ayarla <amount>`](#bekleme-süresini-ayarla-amount)
     - [`/rol-ödülü-ekle <amount> <@role>`](#rol-ödülü-ekle-amount-role)
@@ -54,6 +55,10 @@ Belirtilen kullanıcının puanını gösterir. Eğer kullanıcı belirtilmezse,
 ### `/ödüller`
 
 Sunucudaki rol ödüllerini gösterir.
+
+### `/sıralama <amount>?`
+
+Sunucudaki en çok teşekkür edilen kullanıcıları gösterir. Eğer amount belirtilmezse, ilk 10 kullanıcıyı gösterir.
 
 ### `/teşekkür-ayarla <@user> <amount>`
 
