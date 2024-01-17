@@ -3,5 +3,5 @@ node_modules/
 data/
 
 package-lock.json
-!.config
-.config
+.*
+!.gitignore
