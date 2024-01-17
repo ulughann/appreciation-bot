@@ -70,6 +70,11 @@ English:
     warn2: ❌ You must specify an amount!
     success: ✅ Removed Role Reward
     success_desc: Removed the role reward for %num thanks!
+  leaderboard:
+    name: leaderboard
+    description: shows the ranking of the top users in range
+    option: The amount of people you want to show
+    title: 🎖 Leaderboard
 Nihongo:
   thank:
     name: お礼
@@ -142,6 +147,11 @@ Nihongo:
     warn2: ❌ 数を設定してください！
     success: ✅ ロール報酬は消しました
     success_desc: "%numの数で与えるロール報酬は消しました！"
+  leaderboard:
+    name: 配置
+    description: サーバー上で最も多くの感謝を寄せたユーザーを表示します
+    option: Misetai ninzū 
+    title: 🎖 配置
 Turkish:
   thank:
     name: teşekkür-et
@@ -214,3 +224,8 @@ Turkish:
    warn2: ❌ Bir miktar belirtmelisiniz!
    success: ✅ Rol Ödülü Kaldırıldı
    success_desc: "%num teşekkür için rol ödülü kaldırıldı!"
+  leaderboard:
+    name: sıralama
+    description: Sunucuda en çok teşekkürü olan kullanıcıları gösterir
+    option: Göstermek istediğin kişi sayısı
+    title: 🎖 Sıralama
