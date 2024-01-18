@@ -55,6 +55,10 @@
 
 ギルドの報酬ロールを見せる。
 
+### `/トッピング <数>?`
+
+ギルドの最も感謝した人達を見せる。もし数は設定されますと、最も感謝した十人を見せる。
+
 ### `/お礼の設定 <@ユーザー> <数>`
 
 設定された人のポイントを設定された数に設定される。もし人は設定されませんと、使う人のポイントを変わる。
@@ -74,9 +78,21 @@
 ## ビルド一歩
 
 1. レポをクロンす
+```bash
+$ git clone https://github.com/onrirr/appreciation-bot
+```
 2. 依存を`npm install`インストールする
+```bash
+$ npm install
+```
 3. `config`ファイルにトークンを追加します
+```python
+token = XXXXXXX_xXXXXX_xXX_xXXXXXXXXXXXXX
+``` 
 4. `npm start`でボートを起きる
+```bash
+$ npm run start
+```
 5. ボートをギルドに招待して楽しんで！
 
 ## Lisans
