@@ -7,7 +7,6 @@ import { Database } from "ydb";
 let langData = new Database("translation.yml");
 import { locale } from "../../utils/locale";
 
-
 export default {
   data: new SlashCommandBuilder()
     .setName("set-cooldown")
@@ -59,11 +58,7 @@ export default {
     let l = langData.get(locale(interaction)).set_cooldown;
     if (!interaction.member.permissions.has(PermissionFlagsBits.Administrator))
       return interaction.reply({
-        embeds: [
-          new EmbedBuilder()
-            .setTitle(l.warn1)
-            .setColor(Colors.Red),
-        ],
+        embeds: [new EmbedBuilder().setTitle(l.warn1).setColor(Colors.Red)],
       });
 
     let time = 0;
@@ -76,11 +71,7 @@ export default {
 
     if (time < 1) {
       return interaction.reply({
-        embeds: [
-          new EmbedBuilder()
-            .setTitle(l.warn2)
-            .setColor(Colors.Red),
-        ],
+        embeds: [new EmbedBuilder().setTitle(l.warn2).setColor(Colors.Red)],
       });
     }
 

@@ -33,6 +33,7 @@ Free and open source Discord bot made to show appreciation to others and reward 
     - [`/thank <@user>`](#thank-user)
     - [`/info <@user>?`](#info-user)
     - [`/rewards`](#rewards)
+    - [`/leaderboard <amount>?`](#leaderboard-amount)
     - [`/set-thanks <@user> <amount>`](#set-thanks-user-amount)
     - [`/set-cooldown <amount>`](#set-cooldown-amount)
     - [`/add-role-reward <amount> <@role>`](#add-role-reward-amount-role)
@@ -56,6 +57,10 @@ Shows the score of the given user, if no user is given, shows the score of the u
 
 Shows the role rewards set for the server.
 
+### `/leaderboard <amount>?`
+
+Displays the leaderboard for the current server, amount is optional and specificies the amount of users to display.
+
 ### `/set-thanks <@user> <amount>`
 
 Sets the score of the given user to the given amount.
@@ -75,9 +80,22 @@ Removes the given role reward from the server.
 ## Build
 
 1. Clone the repository
+```bash
+$ git clone https://github.com/onrirr/appreciation-bot
+```
 2. Install dependencies with `npm install`
-3. Add your token to the `config` file
+```bash
+$ npm install
+```
+3. Create a `.config` file
+4. Add your bot token to the .config file like so
+```python
+token = XXXXXXX_xXXXXX_xXX_xXXXXXXXXXXXXX
+``` 
 4. Run the bot with `npm start`
+```bash
+$ npm run start
+```
 5. Invite the bot to your server and enjoy!
 
 ## License

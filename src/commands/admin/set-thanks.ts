@@ -47,20 +47,14 @@ export default {
     let l = langData.get(locale(interaction)).set_thanks;
     if (!interaction.member.permissions.has(PermissionFlagsBits.Administrator))
       return interaction.reply({
-        embeds: [
-          new EmbedBuilder()
-            .setTitle(l.warn1)
-            .setColor(Colors.Red),
-        ],
+        embeds: [new EmbedBuilder().setTitle(l.warn1).setColor(Colors.Red)],
       });
 
     const db = new Database(`data/${interaction.guild.id}.json`);
     const user = interaction.options.getUser("user");
     const amount = interaction.options.getInteger("amount");
-    if (!user)
-      return interaction.reply({ content: l.warn2 });
-    if (!amount)
-      return interaction.reply({ content: l.warn3 });
+    if (!user) return interaction.reply({ content: l.warn2 });
+    if (!amount) return interaction.reply({ content: l.warn3 });
 
     await db.set(`thanks.${user.id}`, amount);
     interaction.reply({
@@ -68,7 +62,9 @@ export default {
         new EmbedBuilder()
           .setTitle(l.success)
           .setDescription(
-            (l.success_desc).replace("%user", user).replace("%num", db.get(`thanks.${user.id}`))
+            l.success_desc
+              .replace("%user", user)
+              .replace("%num", db.get(`thanks.${user.id}`))
           )
           .setColor(Colors.Green),
       ],

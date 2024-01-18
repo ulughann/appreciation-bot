@@ -15,7 +15,9 @@ export default {
       ja: langData.get("Nihongo").add_role_reward.name,
       tr: langData.get("Turkish").add_role_reward.name,
     })
-    .setDescription("Sets a role to give as a reward for a certain amount of thanks")
+    .setDescription(
+      "Sets a role to give as a reward for a certain amount of thanks"
+    )
     .setDescriptionLocalizations({
       "en-US": langData.get("English").add_role_reward.description,
       ja: langData.get("Nihongo").add_role_reward.description,
@@ -48,20 +50,14 @@ export default {
     let l = langData.get(locale(interaction)).add_role_reward;
     if (!interaction.member.permissions.has(PermissionFlagsBits.Administrator))
       return interaction.reply({
-        embeds: [
-          new EmbedBuilder()
-            .setTitle(l.warn1)
-            .setColor(Colors.Red),
-        ],
+        embeds: [new EmbedBuilder().setTitle(l.warn1).setColor(Colors.Red)],
       });
 
     const db = new Database(`data/${interaction.guild.id}.json`);
     const role = interaction.options.getRole("role");
     const amount = interaction.options.getInteger("amount");
-    if (!role)
-      return interaction.reply({ content: l.warn2 });
-    if (!amount)
-      return interaction.reply({ content: l.warn3 });
+    if (!role) return interaction.reply({ content: l.warn2 });
+    if (!amount) return interaction.reply({ content: l.warn3 });
 
     await db.set(`thank_role_${amount}`, role.id);
     interaction.reply({
@@ -69,7 +65,7 @@ export default {
         new EmbedBuilder()
           .setTitle(l.success)
           .setDescription(
-            (l.success_desc).replace("%num", amount).replace("%role", role)
+            l.success_desc.replace("%num", amount).replace("%role", role)
           )
           .setColor(Colors.Green),
       ],

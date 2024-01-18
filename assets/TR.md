@@ -34,6 +34,7 @@
     - [`/teşekkür-et <@user>`](#teşekkür-et-user)
     - [`/bilgi <@user>?`](#bilgi-user)
     - [`/ödüller`](#ödüller)
+    - [`/sıralama <amount>?`](#sıralama-amount)
     - [`/teşekkür-ayarla <@user> <amount>`](#teşekkür-ayarla-user-amount)
     - [`/bekleme-süresini-ayarla <amount>`](#bekleme-süresini-ayarla-amount)
     - [`/rol-ödülü-ekle <amount> <@role>`](#rol-ödülü-ekle-amount-role)
@@ -55,6 +56,10 @@ Belirtilen kullanıcının puanını gösterir. Eğer kullanıcı belirtilmezse,
 
 Sunucudaki rol ödüllerini gösterir.
 
+### `/sıralama <amount>?`
+
+Sunucudaki en çok teşekkür edilen kullanıcıları gösterir. Eğer amount belirtilmezse, ilk 10 kullanıcıyı gösterir.
+
 ### `/teşekkür-ayarla <@user> <amount>`
 
 Belirtilen kullanıcının puanını belirtilen miktarda ayarlar. Eğer kullanıcı belirtilmezse, komutu kullanan kişinin puanını ayarlar.
@@ -73,12 +78,25 @@ Sunucudan rol ödülü kaldırır.
 
 ## Build Adımları
 
-1. Clone the repository
-2. Install dependencies with `npm install`
-3. Add your token to the `config` file
-4. Run the bot with `npm start`
-5. Invite the bot to your server and enjoy!
 
+1. Projeyi klonla
+```bash
+$ git clone https://github.com/onrirr/appreciation-bot
+```
+2. `npm install` ile gereksinimleri indir
+```bash
+$ npm install
+```
+3. `.config` dosyası oluştur
+4. Bot tokenini .config dosyasına ekle
+```python
+token = XXXXXXX_xXXXXX_xXX_xXXXXXXXXXXXXX
+``` 
+4. `npm start` ile botu çalıştır
+```bash
+$ npm run start
+```
+5. Botu sunucuna ekle ve kullanmaya başla!
 ## Lisans
 
 Bu proje MIT lisansı ile lisanslanmıştır. Daha fazla bilgi için [LICENSE](../LICENSE) dosyasına göz atın.
