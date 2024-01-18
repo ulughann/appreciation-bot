@@ -148,10 +148,10 @@ Nihongo:
     success: ✅ ロール報酬は消しました
     success_desc: "%numの数で与えるロール報酬は消しました！"
   leaderboard:
-    name: 配置
-    description: サーバー上で最も多くの感謝を寄せたユーザーを表示します
-    option: Misetai ninzū 
-    title: 🎖 配置
+    name: トッピング
+    description: ギルド上で最も多くの感謝を寄せた人を表示します
+    option: 見せたい人数
+    title: 🎖 トッピング
 Turkish:
   thank:
     name: teşekkür-et
